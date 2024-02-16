@@ -1,0 +1,593 @@
+<!DOCTYPE HTML>
+<!--
+	Dopetrope by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Dopetrope by HTML5 UP</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+	</head>
+	<body class="no-sidebar is-preload">
+		<div id="page-wrapper">
+
+			<!-- Header -->
+				<section id="header">
+
+					<!-- Logo -->
+						<h1><a href="index.html">Verkefni 1</a></h1>
+
+					<!-- Nav -->
+						<nav id="nav">
+							<ul>
+								<li><a href="index.html">Forsíða</a></li>
+								<li>
+									<a href="#">Tölvustudd framleiðsla, Verkefni</a>
+									<ul>
+										<li><a href="verkefni1.html">Verkefni 1</a></li>
+										<li><a href="verkefni2.html">Verkefni 2</a></li>
+										<li><a href="verkefni3.html">Verkefni 3</a></li>
+
+									</ul>
+								</li>
+                                
+                                <li>
+									<a href="#">Tölvustýrður vélbúnaður, Verkefni</a>
+									<ul>
+										<li class="current"><a href="verk111.html">Verkefni 1</a></li>
+										<li><a href="verkefni2.html">Verkefni 2</a></li>
+										<li><a href="verkefni3.html">Verkefni 3</a></li>
+
+									</ul>
+								</li>
+								
+								
+								<li ><a href="no-sidebar.html">Ferilskrá</a></li>
+							</ul>
+						</nav>
+
+				</section>
+			<!-- Main -->
+				<section id="main">
+					<div class="container">
+
+						<!-- Content -->
+							<article class="box post">
+								<a href="#" class="image featured"><img src="cover.jpg" alt="" /></a>
+									<header>
+										<h3>Innihald verkefnis</h3>
+									</header>
+
+								<p>
+								Eftirfarandi skýrsla fer yfir Verkefni 1 í áfanga VÉL205M - Tölvustýrður vélbúnaður. Verkefninu var skipt uppi fjóra hluta og tilgangur verkefnisins var að kynna nemendur fyrir hönnun á rafrás, fræsingu, forritun á rafbúnað, lóðun og almennt undirbúa nemendur fyrir frekari verkefni í áfanganum. Fyrsti partur verkefnisins fólst í því að búa til FabTinyISP bretti sem er AVR ISP forritari. Umsjónarmaður verkefnis var þá búinn að fræsa út rafrásina og nemendur þurftu þá að lóða rétta íhluti á rásina og síðan staðfesta að hún virkar með aðferðum sem farið er betur í á eftir. Partur tvö var svo að hanna rafrás frá grunni í  AutoCAD Eagle, fræsa hana út, lóða á hana og tengja hana við borðið sem gert var í part eitt. Tilgangur FabTiny brettisins var þá að taka við forriti frá tölvu og forrita bretti tvö. Það var gert með skrifa upp Arduino kóða og færa hann yfir í FabTiny brettið sem forritar þá  bretti tvö. Partur tvö var svo talinn árangursríkur þegar bretti tvö framkvæmdi kóðan rétt. Partur þrjú og fjögur eru svo tengdir saman á þann hátt að í þrjú átti að hanna “input and output” kerfi notandi Arduino Uno microcontroller og brauðbretti og svo í fjögur á að hanna rafrás sem kemur í stað brauðbrettisins.
+Hér fyrir neðan verður farið yfir hvern part, þá hvernig hann var framkvæmdur, hvað er mikilvægt að taka fram við hvert verk, hvaða mistök voru gerð og hvernig þau voru löguð, hvað voru algengir gallar og almenn trik eða vinnubrögð sem hjálpuðu við verkin.
+Að lokum er unnt að taka fram að á nokkrum stöðum er vitnað í “Umsjónarmann verkefnis” og er þá talað um Hafliða Ásgeirsson.
+	
+								</p>
+								<section>
+                                    <header>
+										<h3>1    Partur Eitt</h3>
+									</header>
+									<p>
+										Í eftirfarandi kafla er farið yfir gerð á FabTinyISP bretti og prófun á því. Farið verður yfir lóðun íhluta á bretti, trik sem er heppilegt að kunna, mistök sem er þægilegt að forðast og ef ekki, hvernig er hægt að laga þau.
+Eftirfarandi síða lýsir gerð brettisins og var farið eftir henni:
+
+                                    </p>
+                                    
+                                    <ul class="action fit small"></ul>
+                                        <li><a href="https://fab.cba.mit.edu/classes/863.16/doc/projects/ftsmin/index.html" target="_blank" class="button">Building the FabTinyISP - síða</a></li>
+                                      
+									
+									<p>
+                                        Þar sem allar nauðsynlegar upplýsingar um gerð brettisins koma fram í ofanveðri síðu þá verðu þeim ekki lýst frekar hér og er g.r.f. að lesandi hafi kynnt sér hana áður en haldið er lengra. 
+
+									</p>
+                                </section>
+									
+								
+								
+								<section>
+    <header>
+        <h3>1.1 Lóðun íhluta</h3>
+    </header>
+    <p>
+        Lóðboltinn sem var notaður er Velleman VTSS5 sem má sjá á eftirfarandi mynd:
+    </p>
+    <article class="box post">
+        <a href="#" class="image featured"><img src="lodbolti.velbunadur1.1.jpg" alt="" /></a>
+        <p>Mynd 1: Lóðbolti notaður í verkefni.</p>
+        </article>
+        <p>
+            Byrjað var á því að keyra hann í max og leyfa honum að hitna. Einnig er svampurinn bleyttur með vatni og er hann notaður til þess að hreinsa pennann ef þörf er á. Áður en það var byrjað að nota hann þá er breitt smá tin á boltann og því dreift um hann með svampinum þannig að hann fær silfur enda. Þetta er gert til þess að auka hitaleiðni lóðboltans við tinið og þar með léttara að lóða. 
+        </p>
+        
+        <p>
+            Þegar íhlutir voru lóðaðir á brettið var fyrst lóðað smá tin á einn endan, síðan er íhlutur tekinn upp með töng og með lóðbolta í hinni er tinið hitað aftur í vökva og íhlutur settur á sinn stað. Síðan er lokað fyrir með tini hinu megin.
+        
+            Einnig er mælt með að hafa mynd af brettinu á meðan lóðun á sér stað og þegar íhlutur er lóðaður á, þá prófa hann strax eins og kemur fram í kafla 1.3. Ef hann stenst prófun þá er krossað yfir hann á mynd og getur þetta sparað tíma við villuleit ef borð virkar ekki rétt þegar það er prófað í heild.
+        </p>
+    
+</section>
+                                    <section>
+    <header>
+        <h3>1.2    Mistök og lausnir á þeim</h3>
+    </header>
+    <p>
+        Algengustu mistök við lóðun er að það er notað of mikið tin á íhluti eða tin er látið á rangan stað, þá mögulega að valda leiðni á milli rása sem eiga ekki að leiða á milli. Það er alltaf betra að láta minna frekar en meira og svo bæta á. Þetta á sérstaklega við örgjafa (AtTiny 45 eða 85) en of mikið tin á hann getur valdið því að tin fari undir fætur hans og valdi „gerfi“ viðnámi sem veldur slæmri tengingu við bretti. Ef svo vill til að þetta gerist þá er hægt að notast við hitablásara til að fjarlægja íhlut (ef þörf er á) og svo notast við kopar til þess að fjarlægja tinið. Koparinn er þá hitaður upp með lóðbolta og látinn ofan á tinið. Koparinn dregur þá í sig tinið og þá er hægt að byrja uppá nýtt. 
+    
+        Þetta vandarmál, þ.e. of mikið tin, kom upp á hverju bretti sem var lóðað og því mikilvægt að vita lausnir á þessu. Athugið að það er alls ekki skynsamlegt að reyna að þvinga íhluti af bretti í stað hitablásara, því þá er hætta á að koparinn á brettinu komi með, og þá er rafrásin eyðilögð. Vitað er um hóp sem lenti í þessu.
+    </p>
+</section>
+   
+									
+                                     <section>
+                                         <header>
+										<h3>1.3    Prófa leiðni íhluta og brettið í heild</h3>
+									</header>
+                                <p>
+                                      Til þess að vera viss um að íhlutir virki rétt, þ.e. hvort íhlutir leiði rétt, hvort skammhlaup er eða hvort viðnám eru gölluð, þá er notast við eftirfarandi fjölmælir:
+                                    </p>
+                                     <article class="box post">
+								<a href="#" class="image featured"><img src="fjolmali.jpg" alt="" /></a><p>Mynd 2: Fjölmælir notaður í verkefni.</p>
+                                         </article>
+                                         <p>
+                                    Hann var þá stilltur á leiðni og mælt var leiðni hvers íhlutar og er það ekki flókið, ef mælir byrjar að væla þá er leiðni á milli, annars ekki. Notast var við eftirfarandi mynd til þess að sjá hvað átti að leiða og hvað ekki:
+                                             </p>
+                                           <article class="box post">
+								<a href="#" class="image featured"><img src="rasbretti1vel.png" alt="" /></a>
+                                               <p>Mynd 3: Teikning af rafrás eitt.</p>
+                                         </article>
+                                    <p>
+                                    Einnig er hægt að skoða hvort ljós virka með að láta svarta í ground og rauða í spennu.
+                                    </p>
+                                    <p>
+                                    Þegar átti að prófa brettið í heild sinni, þ.e. hvort hægt er að forrita hann í tölvu, var farið eftir kaflanum “Program the Attiny45” á Brian Fab ISP síðunni. Brettið var svo prófað af umsjónarmanni verkefnisins eins og kemur fram á síðunni en það stóðst ekki fyrstu prófun. Þá var farið yfir brettið aftur og það komst í ljós að bæði 1000 Ω viðnámin voru gölluð ásamt Attiny45 kubbnum. Þeim var skipt út eins og kemur fram í kafla 1.2 og þá stóðst brettið prófun og leit svona út:
+                                    </p>
+                                               <article class="box post">
+								<a href="#" class="image featured"><img src="bretti1.jpg" alt="" /></a>
+                                                   <P>Mynd 4: Bretti eitt.</P>
+                                         </article>
+                                    </section>
+                                
+                                    <section>
+                                       <header>
+										<h3>2    Partur 2</h3>
+									</header>
+                                <p>
+                                      Í eftirfarandi kafla er farið yfir gerð bretti tvö, þá hönnun í AutoCAD Eagle, Inkscape útskýrt, fræsingu, lóðun og forritun. Einnig verður skrifað um mistök sem voru gerð eða eru algeng og hvernig hægt er að laga þau.
+                                    </p>  
+                                    </section>
+                                
+                                   
+                                    <section>
+                                       <header>
+										<h3>    2.1    Gerð Brettis</h3>
+									</header> 
+                                    <p>
+                                    Við hönnun á rafrás í Eagle og við fræsingu var notast við eftirfarandi myndband:
+                                    </p>
+                                        <ul class="action fit small">
+                                        <li><a href="https://www.youtube.com/watch?v=ELRp--zfYm0&t=2185s" target="_blank" class="button">Að gera Bretti tvö</a></li></ul>
+                                    <p>
+                                        Þar sem ofanvert myndband fer vel yfir allt frá Eagle yfir að fræsingu verður ekki farið frekar í það hér og mælt með að horfa á það ef þörf er á. Eina vesenið sem lent var í í þessu ferli var að bókasafnið sem á að ná í fyrir Eagle (þarf bara að ná í eitt bókasafn í öllu myndbandinu) virkar ekki ef náð er í það af netinu. Lausn á þessu er bara að fá það hjá Umsjónarmanni verkefnis, sem var gert. Niðurstöðurnar úr Eagle var eftirfarandi rafrás:
+                                </p>
+                                         <article class="box post">
+								<a href="#" class="image featured"><img src="rafras2vel.png" alt="" /></a>
+                                             Mynd 5: Rafrás úr Eagle af bretti tvö.
+                                </article>
+                                <p>
+                                        Eftir að mynd hafi verið tekin í gegnum Inkskape voru eftirfarandi tvær myndir, Traces og Outlines, teknar í fræsingu:
+                                </p>
+                                        <article class="box post">
+								<a href="#" class="image featured"><img src="outlines2vel.jpg" alt="" /></a>
+                                            <p>Mynd 6: Outlines.</p>
+                                </article>
+                                            <article class="box post">
+								<a href="#" class="image featured"><img src="tracesval.png" alt="" /></a>
+                                                <p>Mynd 7: Traces.</p>
+                                </article> 
+                                    </section>
+                                    
+                                <section>
+                                    <header>
+										<h3>    2.2    Fræsing</h3>
+									</header>
+                                <p>
+                                      Við fræsingu var notast við SRM – 20 fræsir, A.K.A þennan hérna:
+                                      </p>
+                                                <article class="box post">
+								<a href="#" class="image featured"><img src="smr20vel.jpg" alt="" /></a>
+                                                    <p>Mynd 8: Fræsari notaður í verkefni.</p>
+                                </article>
+                                <p>
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    Til að byrja fræsingu þá er byrjað á að fræsa út traces, þ.e. línurnar á brettinu eins og sést á Mynd 7. Síðan er fræsað út fyrir outlines, Mynd 6. Það er byrjað á að fræsa traces frekar en outlines því að við fræsingu á outlines getur platan færst til og því verður fræsing á traces ekki rétt. Við fræsingu á traces er byrjað á því að nota 0.4 mm bitann (Mynd 9). Hann er látin í fræsara með sex-kanti. Ath að það er mikilvægt að ekki missa bitann við innsetningu þar sem það getur skemmt hann.
+                                    </p>
+                                    <article class="box post">
+								<a href="#" class="image featured"><img src="minnisstarri.png" alt="" /></a>
+                                        <p>Mynd 9: 0.4 mm og 0.8 mm biti</p>
+                                </article>
+                                
+                                    
+                                <p>
+                                      Síðan þarf að núllstilla fræsara og þá reyna að nýta plötu eins mikið og hægt er. Þá er fræsari færður á sinn stað og biti færður alla leið niður og svo aftur upp um 5 mm. Síðan er biti losaður og hertur þegar hann er í snertingu við plötu. Þá er hann núllstiltur bæði í x,y og z ás. Að lokum er hann færður 2 mm upp og svo er cutað. Þá er addað traces file up og outputað. Síðan er þetta endurtekið nema með 0.8 mm bitan og outlines file. Þá er fræsingu lokið.
+                                </p>
+                                   s  
+                                <p>
+                                    Athugið að ef fræsari er ekki að fræsa nógu djúpt (á aðalega við traces) þá þarf að færa núllpunkt 0.1mm niður og fræsa aftur. Einnig er mikilvægt að plata sem fræst er úr sé á jöfnum fleti.
+                                </p>
+                                </section>
+                                
+                                <section>
+                                 <header>
+										<h3>2.3    Lóðun og prófun á bretti</h3>
+									</header>
+                                <p>
+                                        Ekki er til mynd af bretti fyrir lóðun en farið var eftir þeim aðferðum sem lýst eru í kafla 1.1 og 1.2. Eini munurin var að það þurfti að spurja umsjónarmann verkefnis útí hvaða viðnám átti að nota fyrir R1, R2, R3 og R4 sem sjást á mynd eagle af bretti 2. Það var þá R1 = 10 kΩ, R2 = 100 Ω, R3 = 1 kΩ og R4 = 10 kΩ. Síðan var allt á teikningu lóðað sama mynd lóðað á og leitt bretti þá út eins og eftirfarandi mynd sýnir:
+                                </p>
+                                        <article class="box post">
+								<a href="#" class="image featured"><img src="brettieftirlod2.jpg" alt="" /></a>
+                                            <p>Mynd 10: Bretti tvö.</p>
+                                </article>
+                                <p>
+                                       Íhlutir á bretti voru síðan prófaðir samkvæmt kafla 1.3 og mikilvægt að taka fram að takkinn efst á mynd sama á að leiða á milli 2 og 1 og svo á milli 4 og 3.
+                                </p>
+                                </section>
+                                
+                                    
+                                <section>
+                                <header>
+										<h3>2.4    Forritun</h3>
+									</header>
+                                <p>
+                                    Eina sem myndbandið fer ekki yfir er að þeir pinnnar sem eru notaðir í myndbandinu eru ekki notaðir lengur. Í eftirfarandi kóðum eru notaðir réttir pinnar:
+                                    </p> 
+                                    
+                                    <h1>Takka kóði</h1>
+<pre><code>
+const int buttonPin = 3;  // the number of the pushbutton pin
+const int ledPin = 4;    // the number of the LED pin
+
+// variables will change:
+int buttonState = 0;  // variable for reading the pushbutton status
+
+void setup() {
+  // initialize the LED pin as an output:
+  pinMode(ledPin, OUTPUT);
+  // initialize the pushbutton pin as an input:
+  pinMode(buttonPin, INPUT);
+  mySerial.begin(9600);
+}
+
+void loop() {
+  // read the state of the pushbutton value:
+  buttonState = digitalRead(buttonPin);
+
+  // check if the pushbutton is pressed. If it is, the buttonState is LOW:
+  if (buttonState == LOW) {
+    // turn LED on:
+    digitalWrite(ledPin, HIGH);
+  } else {
+    // turn LED off:
+    digitalWrite(ledPin, LOW);
+  }
+}
+</code></pre>
+                                    
+ <h1>Blink kóði</h1>
+<pre><code>
+int LED_BUILTIN = 4;
+
+// the setup function runs once when you press reset or power the board
+void setup() {
+  // initialize digital pin LED_BUILTIN as an output.
+  pinMode(LED_BUILTIN, OUTPUT);
+}
+
+// the loop function runs over and over again forever
+void loop() {
+  digitalWrite(LED_BUILTIN, HIGH);  // turn the LED on (HIGH is the voltage level)
+  delay(1000);                      // wait for a second
+  digitalWrite(LED_BUILTIN, LOW);   // turn the LED off by making the voltage LOW
+  delay(1000);                      // wait for a second
+}
+</code></pre>
+                                
+ <h1>Virkar kóði</h1>
+                                    
+<pre><code>
+#include <SoftwareSerial.h>
+
+const byte rxPin = 2;
+const byte txPin = 1;
+
+// Set up a new SoftwareSerial object
+SoftwareSerial mySerial (rxPin, txPin);
+
+
+// constants won't change. They're used here to set pin numbers:
+const int buttonPin =3;  // the number of the pushbutton pin
+const int ledPin = 4;    // the number of the LED pin
+
+// variables will change:
+int buttonState = 0;  // variable for reading the pushbutton status
+
+void setup() {
+  // initialize the LED pin as an output:
+  pinMode(ledPin, OUTPUT);
+  // initialize the pushbutton pin as an input:
+  pinMode(buttonPin, INPUT);
+  mySerial.begin(9600);
+}
+
+void loop() {
+  // read the state of the pushbutton value:
+  buttonState = digitalRead(buttonPin);
+  mySerial.println("Virkar!");
+
+  // check if the pushbutton is pressed. If it is, the buttonState is HIGH:
+  if (buttonState == LOW) {
+    // turn LED on:
+    digitalWrite(ledPin, HIGH);
+    
+    
+  } else {
+    // turn LED off:
+    digitalWrite(ledPin, LOW);
+  }
+}
+</code></code></pre>                         
+                                            
+                                    
+                                    <p>        
+                                    Mikilvægt er að taka fram að ef að kubbur vill ekki taka á móti kóðanum og allt virðist vera í lagi þá er eflaust eithvað að snúrunni milli kubbanna tveggja. Til að prófa gæði snúrunar þá eru tveir kubbarnir tengdir saman og síðan er prófað leiðnina milli örgjafana AtTiny 45. Ef ground leiðir í ground, spenna í spennu, miso í miso og mosi í mosi er hægt að skoða hvort hvor örgjafi leiðir innbyrðis, t.d. ground í mosi á sama gjafa. Þetta hefur komið upp og er lausnin oftast að skifta um snúru en einnig hefur virkað að aftengja og tengja kubbana aftur með sömu snúru (ekki er vitað afhverju þetta virkar).
+                                </p>
+                                </section>
+                                
+                                
+                                     <section>
+                                <header>
+										<h3>3    Partur 3</h3>
+									</header>
+                                <p>
+                                    Ákveðið var að dýfa sér í að hanna mjög einfalda inntaks og úttaks rás.  Þessi rás var gerð úr l2C LCD skjá og BME680 fjölmæli sem mælir 4 umhvefisbreytur samtímis.  Hann tekur inn hitastig, loftþrýsting, rakastig og getur mælt gös í loftinu sem ethanol og carbon monoxide.  Ákveðið var að henda öllu út og sýna einungis hitastig á skjánum.
+                                </p>
+                                <p>
+Til að byrja með var kunnáttan á Arduino mjög lítil svo horft var á allskonar myndskeið á Youtube til að ná einhverjum skilningi á hvað þetta gengur út á.  Byrjað var að tengja rafrás en kennari mælti síðan með því að tengja einn hlut í einu og prufa hann til að vera viss um að allt væri tengt rétt.  Þannig að byrjað var að tengja skjáinn.  Síðan var opnað Arduino og downloadað l2d liquidcrystal safninu.  Opnað example sem kallast hello world og það virkaði ekki.  Kennari benti þá á að breyta þurfti viðnámi á sjánum sem var gert með því að stinga skrúfjárni aftan í skjáinn og snúa þangað til að birtist á skjáinn „Hello World“.  Þá var skjárinn klár.
+                                </p>
+                                            <article class="box post">
+								<a href="#" class="image featured"><img src="3mynd1.png" alt="" /></a>
+                                                <p>Mynd 11: Skjár tengdur</p>
+                                </article>
+                                <p>
+þá þurfti að athuga hvort BME680-mælirinn virkar.  Það var gert með því að tengja hann við brauðbretti eins og á myndinni hér fyrir neðan.  Síðan var náð í Adafruit BME680 safnið og náð í example sem hét bme680test.  Það virkaði ekki nógu vel og ástæðan fyrir því var tengingaleysi.  Nokkrar snúrur voru alltaf að detta úr sambandi því það voru bara mjög stórar holur í BME680 mælinum sem vírarnir voru ekki nógu fastir við.  Þannig það var gripið í aðra pinna sem voru með í pokanum sem mælirin kom í og lóðað við.  Þá virkaði mælirinn eins og átti.  Sáum þetta á eftirfarandi mynd:
+                                </p>
+                                                <article class="box post">
+								<a href="#" class="image featured"><img src="3mynd2.png" alt="" /></a>
+                                                    <p>Mynd 12: Hitamælir tengdur</p>
+                                </article>
+                                <p>
+                                    þá var hafist til handa við að tengja þetta allt saman og auðvitað klikkaði það í fyrstu tilraun.  Byrjað var að tengja allt beint við analog pinna sem þýðir að tengt var við A4,A5 og síðan A0, A1.  Planið var síðan að breyta númerinu á analog í kóðanum.  Þá kom í ljós að það er ekkert svoleiðis í kóðanum og að A4 og A5 eru sjálfir skilgreindir sem SDA og SCL fyrir l2C samskipti.  Þá kom sú hugmynd að tengja A4 og A5 við borðið og þá væri hægt að tengja bæði skjáinn og mælinn við þá.  Þá virkuðu bæði skjárinn og mælirinn miðað við bæði examples sem voru valinn hér fyrir ofan. Loka tengi á Arduino og brauðbretti sést svo á eftirfarandi mynd:                                </p>
+                                     <article class="box post">
+								<a href="#" class="image featured"><img src="3mynd3.png" alt="" /></a>
+                                         <p>Mynd 13: Arduino og brauðbretti.</p>
+                                </article>
+                                <p>
+                                         þá var komið að því að smíða kóðan.  Hér var leikplanið að taka brot úr báðum kóðum og púsla þeim saman til að fá eitthvað af viti út.  Það gekk brösulega en voru bara klaufavillur gerðar svo þetta gekk upp að lokum.  Byrjað var að stytta bme680test eins mikið og hægt var svo að aðeins hitastig birtist í Serial Monitor.  Svo var bætt við l2C Liquidcrystal og breytt helloworld kóðanum svo að hann sýndi hitastig og rúmlega það.  Rásin sem var gerð er ekki alveg eins og fyrir ofan en virkar alveg eins:
+                                </p>
+                                         <article class="box post">
+								<a href="#" class="image featured"><img src="myndafras.jpg" alt="" /></a>
+                                             <p>Mynd 14: Mynd af lokavöru</p>
+                                </article>
+                                <p>
+                                   Kóðan fyrir þetta er að finna hér fyrir neðan:
+        
+                                </p>
+                                         <pre><code>
+#include <LiquidCrystal_I2C.h>
+#include <Wire.h>
+#include <SPI.h>
+#include <Adafruit_Sensor.h>
+#include "Adafruit_BME680.h"
+
+#define BME_SCK 13
+#define BME_MISO 12
+#define BME_MOSI 11
+#define BME_CS 10
+
+LiquidCrystal_I2C lcd(0x27,20,4);
+Adafruit_BME680 bme;
+
+void setup() {
+  Serial.begin(9600);
+  while (!Serial);
+  Serial.println(F("BME680 test"));
+  if (!bme.begin()) {
+    Serial.println("Could not find a valid BME680 sensor, check wiring!");
+    while (1);
+  }
+  // Set up oversampling and filter initialization
+  bme.setTemperatureOversampling(BME680_OS_8X);
+  lcd.init();
+  lcd.init(); 
+  lcd.backlight();
+}
+
+void loop() {
+  if (! bme.performReading()) {
+    Serial.println("Failed to perform reading :(");
+    return;
+  }
+  delay(2000);
+  lcd.setCursor(0,0);
+  lcd.print("BME680 AND LCD");
+  lcd.setCursor(0,1);
+  lcd.print("Temp:");
+  lcd.setCursor(8,1);
+  lcd.print(bme.temperature);
+}
+
+</code></pre>
+                                
+                                    </section>
+                                
+                                    <section>
+                                       <header>
+										<h3>4    Partur 4</h3>
+									</header>
+                                <p>
+                                             Í eftirfarandi kafla verður farið yfir hönnun og gerð á rafrás sem kom í stað brauðbrettis í Parti 3. Farið verður yfir rafrásina í Eagle, Inkscape og fræsingu, ásamt lóðun og lokaniðurstöðu ásamt þeim vandarmálum sem komu upp.
+                                </p> 
+                                    </section>
+                                
+                                    
+                                
+                                             <header>
+										<h3>4.1   Hönnun og gerð rásar </h3>
+									</header>
+                                <p>
+                                             Hönnun rafrásar í Eagle fór fram á svipaðan hátt og í myndbandi um 2nd rás ásamt eftirfarandi myndbandi:
+                                </p>
+                                    
+                                
+                                    <li><a href="https://www.youtube.com/watch?v=ELRp--zfYm0&t=2185s" target="_blank" class="button">Búa til tengibretti með Eagle - video</a></li>
+                                <p>
+                                      Ekki var lent í neinum nýjum erfiðleikum við hönnun í Eagle og eftirfarandi mynd var tekinn í Inkscape til að undirbúa fyrir fræsingu.
+                                </p>
+                                    <article class="box post">
+								<a href="#" class="image featured"><img src="4mynd1.png" alt="" /></a>
+                                <p>Mynd 15: Eagle rafrás 3.</p>
+                                </article>
+                                  <p>Myndin var síðan tekin í gegnum Inkscape eins og lýst er í myndbandinu hér fyrir ofan og svo í fræsingu eins og lýst er í kafla 2.2.
+Ekki er til mynd af bretti fyrir lóðun en eftir fræsingu var lóðað á brettið og lóðun fór svo fram eins og lýst er í kafla 1.1 án vandarmála.
+</p>
+<article class="box post">
+								<a href="#" class="image featured"><img src="4mynd2.jpg" alt="" /></a>
+                                <p>Mynd 16: Bretti 3 lóðað.</p>
+                                </article>
+                                <p>Eina sem er talið mikilvægt að taka fram er að láta nóg tin ofan á pinna svo þeir leiði sem best. Einnig var leiðni brettis prófuð samkvæmt kafla 1.3. Að lokum voru hitastigsmælir og skjár festir á, nema komst í ljós að mælirinn var gallaður og mældi bara 34 °C. Eftir allnokkrar prófanir (eins og að tengja hann aftur við brauðbretti ) þá var hann talinn gallaður og honum var skipt út fyrir fjarlægðarmæli. þá þurfti að gera ákveðnar breytingar við brettið og kóðan þar sem þessi mælir tengist ekki sömu inputs og hinn gerði. Hægt var að nota sömu ground og spennu og fyrir breytingu en þessi mælir tengist í digital 2 og 3 og þurfti að lóða snúrur við þá. Þá leit bretti svona út:</p>
+                                article class="box post">
+                                <article class="box post">
+								<a href="#" class="image featured"><img src="maamma.jpg" alt="" /></a>
+                                <p>Mynd 17: Loka verk.</p>
+                                </article>
+								<p>Einnig var kóða breytt í:</p>
+                                
+                        <pre><code>#include <LiquidCrystal_I2C.h>
+#include <Wire.h>
+#include <SPI.h>
+#include <HCSR04.h>
+
+byte triggerPin = 3;
+byte echoPin = 2;
+LiquidCrystal_I2C lcd(0x27,20,4);
+
+void setup () {
+  Serial.begin(9600);
+  HCSR04.begin(triggerPin, echoPin);
+  lcd.init();
+  lcd.init(); 
+  lcd.backlight();
+}
+
+void loop () {
+  double* distances = HCSR04.measureDistanceCm();
+  
+  Serial.print("1: ");
+  Serial.print(distances[0]);
+  Serial.println(" cm");
+  Serial.println("---");
+  lcd.setCursor(0,0);
+  lcd.print("Typpid thitt");
+  lcd.setCursor(0,1);
+  lcd.print("er:");
+  lcd.setCursor(4,1);
+  lcd.print(distances[0]);
+  lcd.setCursor(10,1);
+  lcd.print("cm");
+  lcd.setCursor(6,1);
+  delay(250);
+}</code></pre>
+                        
+                        Og þá er loka partur verkefnis kláraður og verkefni eitt í heild lokið.
+                        
+                        
+							</article>
+
+					       </div>
+				         </section>
+
+			<!-- Footer -->
+				<section id="footer">
+					<div class="container">
+						<div class="row">
+							<div class="col-8 col-12-medium">
+								
+								
+								
+							</div>
+							<div class="col-8 col-12-medium">
+								<section>
+									<header>
+										<h2>Hafðu samband</h2>
+									</header>
+									<ul class="social">
+										
+										
+										<li><a class="icon brands fa-linkedin-in" href="https://www.linkedin.com/in/hilmar-logi-p%C3%A1lsson-b2565a2b0/" target="_blank"><span class="label">LinkedIn</span></a></li>
+									</ul>
+									<ul class="contact">
+										<li>
+											<h3>Heimilisfang</h3>
+											<p>
+												Eggertsgata 30, 103<br />
+												102 Reykjavík<br />
+												Ísland
+                                        
+											</p>
+										</li>
+										<li>
+											<h3>Póstur</h3>
+											<p><a href="#">hilmarlogi01@gmail.com</a></p>
+										</li>
+										<li>
+											<h3>Sími</h3>
+											<p>(+354) 8998302</p>
+										</li>
+									</ul>
+								</section>
+							</div>
+							<div class="col-12">
+
+								<!-- Copyright -->
+									<div id="copyright">
+										<ul class="links">
+											<li>&copy; Hilmar Logi Pálsson. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+										</ul>
+									</div>
+
+							</div>
+						</div>
+					</div>
+				</section>
+
+		</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.dropotron.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
