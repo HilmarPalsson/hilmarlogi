@@ -58,7 +58,7 @@
 
 						<!-- Content -->
 							<article class="box post">
-								<a href="#" class="image featured"><img src="cover222.png" alt="" /></a>
+								<a href="#" class="image featured"><img src="MYNDCOVER.jpg" alt="" /></a>
                                 
 								<header>
 									<h2>Innihald vinnubókar</h2>
@@ -92,77 +92,47 @@
 									</header>    
                                     
                                     <p>
-                                   Þann 22.feb var byrjað að vinna í kringum hádegi. Það var þá ákveðið að við gerð róbótans myndi bara vera hannaður einn partur í einu og ef hann virkar, þá hanna þann næsta út frá þeim sem virkar og áfram. Þetta var ákveðið út af því að ef allur róbotin hafði verið hannaður fyrst og svo smíðaður þá er nánast ómögulegt að það fari ekki eitthvað úrskeiðis og þá jafnvel eitthvað sem krefst þess að endurhanna allan arminn. 
-                                        
+                                   Í dag var byrjað á því að skoða hvernig væri best að loka/opna lokunum þar sem það er talið flóknasti partur verkefnis, þ.e. að stjórna flæði eins og óskir eru um. Það var byrjað að leita á netinu og skoða hvernig lokar virka almennt og þá hvort það væri hægt að 3d-prenta einn slíkann. Eftir leit þá reyndist það ljóst að það væri mun auðveldara uppá tíma að kaupa tvo loka og þá loka þeim með servo mótorum frekar en að 3d-prenta allt ruglið. Þá þurftti aðeins að 3d-prenta húsið, þ.e. sem heldur loka og servo í stað. Áður en það var byrjað að hanna slíkan íhlut þá var farið á netið og viti ekki menn að það var ein slík hönnun fundinn. Mynd 1 sýnir hana:
                                     
                                     </p>
-                                    <p>
-                                    Með það í huga þá var fyrsta mál á dagskrá að finna út hvaða mótorar voru til staðar í VR-III og ná í þá réttu. Það þurfti allavega fjóra mótora fyrir arminn, þá í öxlina (grunninn), olnbogan, úlnlið og svo einn til að grípa í glasið. Það var álitað að það myndi þurfa stepper mótor í grunninn því það þurfti líklegast að gíra hann þar sem allir mótorar til staðar voru með hlægilega getu. Stærsti stepper  mótorinn var með 1.2 Nm holding toruqe og notaði max 2.5 amper við 12 volt  og var ákveðið að nota hann í öxlina. Það var síðan ákveðið að notast við minni stepper í olnbogann þar sem hann þyrfti líklegast líka að vera gíraður en þessi var bara með 0.2 Nm af holding torque, sem er glatað. Á þessum tíma var ekki búið að ákveða mótora fyrir úlnið eða kló. Eftirfarandi eru myndir af þessum 2 mótorum:
-                                     
                                     
+                                    
+                                    <article class="box post">
+        <a href="#" class="image featured"><img src="MYND1LOKA.png" alt="" /></a>
+        <p>Mynd 1: Lokakerfi</p>
+        <ul class="action fit small"></ul>
+                                        <li><a href="https://www.thingiverse.com/thing:3496770/files" target="_blank" class="button">3D prentað lokakerfi</a></li>
+                                        
+                                        
+                                        
+        </article>
+                                   
+                                    
+                      <p> </p>              
+                                    
+                                    <p>
+                                    Þessi hönnun er fyrir ½ tommu kúluloka sem hentar mjög vel og var því koppaður. Húsinu var hent í prent og á meðan var farið út í Byko til að ná í tvo hálfstommu loka. eins og má sjá hér:
+
                                         
                                     
                                     </p>
                                     
                                     
                                                                   <article class="box post">
-        <a href="#" class="image featured"><img src="Mynd2.png" alt="" /></a>
-        <p>Mynd 2: Stepper mótorar</p>
+        <a href="#" class="image featured"><img src="MYND2LOKA.png" alt="" /></a>
+        <p>Mynd 2: Lokar</p>
         </article>
                    
-                                    
+                                     
                                     
                                      <p>
-                                    Næsta mál á dagskrá var að láta stærri stepper mótorinn keyra. Það var byrjað á því að ná í mini driver, sem er tæki sem getur stjórnað straumnum sem getur farið inn í mótorinn. Þetta var mjög hentugt þar sem snúrurnar sem voru notaðar eru 3 amper og 2 amper en við vildum 2.5 og 1.5 amper. Byrjað var á að  tengja mótorin í gegnum driveranna, þannig það þurfti frekar margar snúrur til að stýra mótorinum.  Byrjað var á að horfa á þetta myndband:
+                                   þá var verk dagsins búið.
                                         
                     
                                     <p/>
                                     
                                     
-                                    
-                                    <ul class="action fit small"></ul>
-                                        <li><a href="https://www.youtube.com/watch?v=idVcItHfGS4&t=413s" target="_blank" class="button">Myndband fyrir keyrslu á stepper</a></li>
-                                    <p>
-                                        
-                                        Myndbandið fer yfir allt sem þarf, þ.e. að tengja drivera og í að kóða fyrir keyrslu. Okkur tókst að fá mótorinn til að virka. Aðalvesenið hér var að finna út hvaða snúrur úr mótorinum ætti að tengja við.  Það var komist að því að til eru tvær skotheldar  leiðir til að ákvarða það.  Maður getur náð í fjölmæli og tengt hann við sitthvorar snúru þangað til að hann pípar.   Þá er vitað að þær snúrur eiga að fara saman í A+- eða B+-.  Einnig er hægt að tengja snúrur saman og snúa drifskaftinu á meðan.  þú veist að þú ert með réttar snúrur saman þegar það myndast viðnám við snúninginn. 
-                                        Réttar snúrur og tengingar má sjá á eftirfarandi mynd:
-                                    
-                                    
-                                    </p>
-                                    
-                                     <article class="box post">
-        <a href="#" class="image featured"><img src="Mynd3vin.png" alt="" /></a>
-        <p>Mynd 3: Tengi fyrir stepper</p>
-        </article>
-                                  
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    <p>
-                                    
-                                    Á meðan á því stóð þá var teiknað inventor módel af mótorunum og út frá þeim var prentað út millistykki fyrir mótorinn og laserskorinn út prótotýpa af efri handleggnum sem passaði við millistykkið, sem má allt sjá á eftirfarandi teikningum:
-                                    </p>
-                                    
-                                  <iframe src="https://gmail3729402.autodesk360.com/shares/public/SHd38bfQT1fb47330c991b33f43d5a52c33f?mode=embed" width="800" height="600" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"  frameborder="0"></iframe>
-                                    
-                                   <p>
-                                    Svo var þetta allt prófað saman til að skoða getu mótorsins sem má sjá í eftirfarandi myndbandi:
-                                    
-                                    </p> 
-                                    <ul class="action fit small"></ul>
-                                        <li><a href="https://www.youtube.com/shorts/K9XTb5VpHbo" target="_blank" class="button">Myndband - Próf 1</a></li>
-                                    
-                                    <p>
-                                    Eins og sést þá hló hann að þessu og í þessari stððu voru menn komnir með ofurtrú á mótornum og héldu í pínu stund að það þyrfti ekki gírunn,  en það var nú bara kjánalegur draumur. Dagurinn endaði svo á því að láta báða mótorana keyra í einu.
-                                    
-                                    
-                                    </p>
-                                    
-								</section>
-                                
-                                
+                                   
                                 
                                 
                                 
@@ -176,69 +146,30 @@
                                 
                                 <section>
                                 <header>
-										<h2>25. Feb, mánudagur</h2>
+										<h2>8. Apríl, mánudagur</h2>
 									</header> 
                                 <p>
-                                    Um morguninn var millistykki fyrir seinni mótorinn 3dprentað og annar eins armur skorinn út til að skoða getu seinni mótorsins. Hann var talsvert minni en sá sem er notaður í öxlina, aðeins með 0.2 Nm getu, 9 volt og 1.5 Amper. Það kom ekki skemmtilega út þar sem hann náði ekki einu sinni að lyfta arminum og enn verra var að eftir að það var bætt seinni armi við þá gaf stóri mótorinn líka eftir. Það var því ljóst að það væri þörf á gírunn. Þá var horft á eftirfarandi myndbönd um gíra og gírkassa:
+                                    Í dag var prentið fyrir lokana búið en þá komst í ljós að það var einhver leiðinleg skekkja í því, þ.e. lokinn er ekki rétt staðsettur í húsinu eins og má sjá á Mynd 3.
                                     
                                     
                                     </p>
                                     
-                                    https://www.youtube.com/watch?v=bzRP8VrT4uk
-                                    
-                                    <ul class="action fit small"></ul>
-                                        <li><a href="https://www.youtube.com/watch?v=bzRP8VrT4uk">Myndband - 3D prentaður gírkassi</a></li>
-                                    
-                                    
-                                    <ul class="action fit small"></ul>
-                                        <li><a href="https://www.youtube.com/watch?v=_rZOjuvBSGU&t=212s">Myndband - Gírar í Fusion 360</a></li>
-                                    
-                                    
-                                    
-                                    <p>
-                                    Eftir áhorf þá var langur dagur framundan og ekki var hætt fyrr en það var kominn áreiðanleg hönnun á gírkassa og gírum fyrir öxlina. Það var byrjað á því að hanna gíranna í Fusion eins og er sýnt í myndbandinu hér fyrir ofan. Planið var þá að hafa bilið fyrir gíranna í kassanum 50 mm og var þá fyrst hannað gíra með sameiginlegt gírhlutfall yfir 200, sem var svolítið mikið. Eftir endurskoðun þá var gískað á að gírhlutfall 1:30 væri nægilegt fyrir öxlina og þá væri kerfið með holding torque uppá 34 Nm. Eftirfarandi gírar voru því hannaðir og settir saman:
-                                    </p>
-                                    
-                                    
-                                    
-                                    <iframe src="https://gmail3729402.autodesk360.com/shares/public/SHd38bfQT1fb47330c9976d70cfab2f7e1bb?mode=embed" width="800" height="600" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"  frameborder="0"></iframe>
-                                    
-                                    
-                                    <p>
-                                    Ofanverðir gírar eru með 30 tönnum, 20/40, og svo er sá stærsti með 60 tönnum. Einnig sést röðun þeirra í gírkassanum þar sem 30 tanna gírinn er input og 60 tanna er output.
-                                    </p>
-                                    <p>
-                                    
-                                    Öllum gírunum var svo hent í prent yfir nóttina og á meðan var byrjað á að hanna gírkassann. Þar sem allir gírar hafa modulus 1 þá var mjög þægilegt að ákvarða rétta lengd milli gír öxla, því þá er fjöldi tanna = pitch þvermál. Það þurfti að koma fyrir þremur götum fyrir öxla og svo einu stærra gati þar sem mótorinn festist við kassann.  Þá þurfti líka að koma skrúfugötum fyrir á réttum stöðum fyrir hann. Einnig þurfti að gera ráð fyrir fyrsta arminum, sem, á tíma hönnunar, átti að vera úr tveimur 3mm akríl plötum með 50mm bili á milli. Þá þurfti endi kassans að hafa allavega 56 mm bil á milli og var ákveðið að hafa það 56.2 mm þannig að engin núningur væri á milli arma og kassa (1 mm milli arma og kassa). Eftirfarandi er þá gírkassinn:
-                                    </p>
-                                    <iframe
-                                            src="https://gmail3729402.autodesk360.com/shares/public/SHd38bfQT1fb47330c99158ea80510bb8432?mode=embed" width="800" height="600" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"  frameborder="0"></iframe>
-                                    
-                                    
-                                    
-                                    <p>
-                                    Fyrst var prentað út próf fyrir mótorfestinguna og öxull fyrir mótorinn og hún kom svona út og smellpassaði:
-                                    
-                                    </p>
-                                    <article class="box post">
-        <a href="#" class="image featured"><img src="profgirkassi.jpg" alt="" /></a>
-        <p>Mynd 4: Próf eitt á gírkassa</p>
+                                   <article class="box post">
+        <a href="#" class="image featured"><img src="MYND3LOKA.jpg" alt="" /></a>
+        <p>Mynd 3: Loki ekki rétt í.</p>
         </article>
+                                    
+                                    
+                                    
                                     <p>
-                                    Þá var búið að prófa allt sem þurfti að prófa og kassinn var prentaður út. Hann kom þá svona út:
+                                    Þar sem þessi íhlutur var ekki teiknaður, heldur tekinn af Thingiverse, þá þurfti að endurteikna hann og laga þessa villu. Þetta var gert og nýja partinum hent í prent.
+                                    </p><p>
+Á meðan prentið var í gangi þá var byrjað á grunninum sem heldur stepper mótornum og Microstep driverum. Hann var teiknaður á sem einfaldasta máta en hann var ekki kláraður. Ekki var gert meira í dag.
+
+                                    
                                     </p>
                                     
-                                    <article class="box post">
-        <a href="#" class="image featured"><img src="girkassi.jpg" alt="" /></a>
-        <p>Mynd 5: Gírkassi</p>
-        </article>
-                                    <p>
                                     
-                                    Þá var þessum vinnudegi slúttað.
-                                    </p>
-                                    
-                                </section>
-                                
                                 
                                 
                                 
@@ -251,31 +182,47 @@
                                 
                                  <section>
                                 <header>
-										<h2>26. Feb, þriðjudagur</h2>
+										<h2>9. Apríl, þriðjudagur</h2>
 									</header> 
                                      
                                      
                                      <p>
-                                     Dagurinn byrjaði kl 8 og var farið í að hanna fyrsta arminn. Hann er ekki flókinn en hann átti að vera með festingu fyrir minni stepper mótorinn sem væri þá input inn í annað nákvæmlega eins gírasett og fyrir öxlina nema að input gírinn hefur 40 tennur en ekki 30 og með festingu fyrir minni stepper mótorinn. Til þess að festa arminn við gírkassann var notast við eftirfarandi öxull:
+                                    Í dag var Grunnurinn  kláraður og  má sjá hann hér:
                                      
                                      </p>
-                                     <iframe src="https://gmail3729402.autodesk360.com/shares/public/SHd38bfQT1fb47330c99c224afc7cf96ff37?mode=embed" width="800" height="600" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"  frameborder="0"></iframe>
+                                    
+                                     
+                                     
+                                     
+                                     <iframe src="https://gmail3729402.autodesk360.com/shares/public/SHd38bfQT1fb47330c99ab09636e837d2c9c?mode=embed" width="800" height="600" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"  frameborder="0"></iframe>
+                                     
+                                     
                                      
                                      <p>
-                                     Hann er nákvæmlega 56 mm í lengd og er pressfitaður í arminn. Svo var annar nákvæmlega eins, nema 50 mm langur, fyrir seinni arminn prentaður út.  Síðan þurfti einnig að hafa pressfit festingar á milli platanna tveggja fyrir aukinn stöðuleika. Eftirfarandi eru sketcharnir sem voru notaðir við skurð:
+                                    Pælingin hér eru að þetta eru tvö hólf, þá eitt fyrir stepper mótorinn (stærra hólfið) og svo eitt fyrir ministepper driver sem stýrir straum á mótorinn frá aflgjafa. Hólfin eru ekki heil þannig að þægilegt sé að þræða víra í mótorinn og driverinn, Einnig eru tvö kassalaga göt til hliðar fyrir hvaða aparat sem verðður hannað til þess að halda lokunum á sínum stað og getur það þá fest sig við þennan grunn.
+                                     </p>
+                                     <p>
+Grunninnum var hent í prent og á meðan var  hannað millistykki sem tengir báða lokana í einn stút. það fór ekki mikill tími í þennan part og má sjá hann hér:
+
+
                                          
                                      </p>
                                      
-                                     <iframe src="https://gmail3729402.autodesk360.com/shares/public/SHd38bfQT1fb47330c99f247729064602e3e?mode=embed" width="800" height="600" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"  frameborder="0"></iframe>
+                                     <iframe src="https://gmail3729402.autodesk360.com/shares/public/SHd38bfQT1fb47330c9963d3b3fb90619f3f?mode=embed" width="800" height="600" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"  frameborder="0"></iframe>
                                      
                                      <P>
-                                     Hann var skorinn út og þá var verk dagsins búið.
+                                     Síðan þurfti að hanna skál til að geyma vökvana, og huga þurfti að tengingu úr skálinni í lokana. Lokarnir sitja þétt saman svo skálarnar eru hannaðar með það í huga. Síðan þarf að tengja skálarnar við lokana og því miður var ekki hægt að nota skrúfganginn í lokunum því um leið og önnur skálin væri komin í þá væri ómögulegt að skrúfa hina í nema ef þær voru rosalega mjóar. Það væri ekki æskilegt til að geyma nægilegt magn af vökva. Því þurfti að hanna festingu án þess að skrúfa. Til þess var fundið pípumillistykki með sama skrúfgangi og lokarnir á McMaster-Carr og .stp file af því var hlaðið niður. Því var breytt örlítið og pinnum var bætt á annan endann til að festa skálarnar. Sjá má myndir af millistykkinu og skálunum hér:
+
                                      </P>
                                      
                                      
                                      
-                  
+                  <iframe src="https://gmail3729402.autodesk360.com/shares/public/SHd38bfQT1fb47330c99ae4145193fdefbe9?mode=embed" width="800" height="600" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"  frameborder="0"></iframe>
                                      
+                                     <p>Nú var allt sem kemur að vökva kerfinu hannað og má sjá teikningu af því hér:</p>
+                                     <iframe src="https://gmail3729402.autodesk360.com/shares/public/SHd38bfQT1fb47330c99b49723f19f63cbdc?mode=embed" width="800" height="600" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"  frameborder="0"></iframe>
+                                     <p>
+                                     Ekki var gert meira í dag.</p>
                                      
                                 </section>
                                 
@@ -284,244 +231,195 @@
                                 
                                  <section>
                                 <header>
-										<h2>1. Mars, Laugardagur</h2>
+										<h2>10. Apríl, Laugardagur</h2>
 									</header>
                                      <p>
-                                     Verk dagsins var að prófa fyrri arminn. Þá var annar nákvæmlega eins skorinn út og festur á og kóði fyrir báða var keyrður. Ekki er til myndband af prófuninni en hann virkaði vel í ~10 mín en svo brotnaði fyrsti armurinn við öxullinn sem tengir hann og gírkassann eins og má sjá á eftirfarandi mynd:
+                                     Í dag var borðið, sem skotglös fara á, hannað og laser skorið út. Eina sem var krafa í hönnun borðsins var að standard skotglös komast á það og hreyfast ekki meðan borðið snýst.  Þá var fundið skotglas í vr3, það mælt á botni og topp (þvermál 30 neðst, 46 efst) og hannað var þá borð með 8 holum í hring með þvermál 38 mm. Þetta má sjá hér:
+
                                      </p>
-                                     <article class="box post">
-        <a href="#" class="image featured"><img src="brot.jpg" alt="" /></a>
-        <p>Mynd 6: Brot og þrot</p>
-        </article>
+                                     <iframe src="https://gmail3729402.autodesk360.com/shares/public/SHd38bfQT1fb47330c993976210f3b057200?mode=embed" width="800" height="600" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"  frameborder="0"></iframe>
                                     
                                      <p>
-                                     Brotið varð líklega vegna spennuhækkunar í 90 gráðu horni öxullatsins og það var lagað með því að gera fyrri arminn tvöfaldan, þ.e. hafa tvær plexígler plötur hvoru megin. Þá þurfti einnig að breyta pressfit festingunum þannig að þær taki um 6mm þykkt plexígler en ekki 3mm, ásamt því að prenta nýja gíra fyrir arminn, sem eru þá 8 mm í stað 10 mm á þykkt. Það var ekki gert meira þann dag en hann leit þá svona út:
+                                    Þetta borð var síðan laser skorið út, þ.e. það var skorið tvisvar sinnum út úr 3mm akrýl plötu og þeir lagpir saman til að gera 6mm þykkt borð. Síðann til að festa borð mið mótor þá var hannað einfalt stykki sem má sjá hér:
                                          
                                      </p>
                                      
-                                      <article class="box post">
-        <a href="#" class="image featured"><img src="Armur1.jpg" alt="" /></a>
-        <p>Mynd 7: Armur eitt, án gírkassa</p>
+       <iframe src="https://gmail3729402.autodesk360.com/shares/public/SHd38bfQT1fb47330c9935b09c55c16c9122?mode=embed" width="800" height="600" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"  frameborder="0"></iframe>
+                                     <P>
+                                       hann var prentaður út og þá leit þetta svona út saman:  
+                                     </P>
+                                     
+                                                             <article class="box post">
+        <a href="#" class="image featured"><img src="MYND4LOKA.jpg" alt="" /></a>
+        <p>Mynd 4: Borð og öxull.</p>
         </article>
-                 
-                                <article class="box post">
-        <a href="#" class="image featured"><img src="Armur1g.jpg" alt="" /></a>
-        <p>Mynd 8: Armur eitt, með gírkassa</p>
-        </article>     
-                                </section>
+                       
+                               
+                                    <p>
+                                     Einnig var tekinn stuttur tími í að hanna cover yfir minidriverinn þannig vökvi fari ekki beint á hann. Hann var hannaður þannig að hann er pressfitaður í hólf á gruninum og má sjá hann hér:
+</p>
+                                     <iframe src="https://gmail3729402.autodesk360.com/shares/public/SHd38bfQT1fb47330c990604553df713d9e3?mode=embed" width="800" height="600" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"  frameborder="0"></iframe>
+                                     
+                                     <p>
+                                     Hann var einnig laser skorinn út og á Mynd 5 má sjá hann pressfitaðan á sínum stað ásamt borði.
+                                     </p>
+                                     <article class="box post">
+        <a href="#" class="image featured"><img src="MYND5LOKA.jpg" alt="" /></a>
+        <p>Mynd 5: Cover á sínum stað.</p>
+        </article>
+                                     <p>Það var ekki gert meira í dag.</p>
+                                    </section>
                                 
                                 
                                 
                                 
                                 
-                                
-                                
+       
                                 
                                 <section>
                                 <header>
-										<h2>4. Mars, Mánudagur</h2>
+										<h2>13. Apríl, Sunnudagur</h2>
 									</header>
                                     <p>
-                                    Fyrsta sem var gert var að skera fyrsta arminn. Hann var skorinn út og settur saman með nýju gírunum og prófaður eins og áður, þá í 30 mín og hann virkaði vel. Þar sem þetta var fyrsti róbotinn sem náði að hreyfa sig almennilega þá fóru aðrir hópar að skoða kerfið sem var notað, aðallega gíranna og sumir hópar fóru þá sömu leið og með sinn arm. Það voru meira að segja notaðir afgangsgírar úr þessum armi í neðri gírkassanum hjá öðrum hópi, sem var þá hannaður eftir þeim fyrsta.
-                                    </p>
-                                    
-                                    <p>
-                                    Þá var farið í að hanna seinni arminn og gripklóna. Það var ákveðið að nota servo mótor fyrir seinni arminn (mótorinn sem snýr gripkló) þar sem hann er léttari og kraftmeiri en stepperinn. Þá var notast við eftirfarandi servo mótor:
-                                    </p>
-                                    
-                                    
-                                    <article class="box post">
-        <a href="#" class="image featured"><img src="servo20.jpg" alt="" /></a>
-        <p>Mynd 9: 20kgcm Servo</p>
-        </article>
-                                    
-                                    <p>
-                                    3d servo og mynd
-Hann hefur 2 Nm holding torque og þarf ekki nema afl frá arduino bretti. Armarnir sem voru svo skornir út eru svo eftirfarandi :
+                                    Ekki var gert mikið í dag nema að prenta út skálarnar tvær og p´pimillistykkin og litu þau út eins og Mynd 6 sýnir.
 
                                     </p>
-                                    <iframe src="https://gmail3729402.autodesk360.com/shares/public/SHd38bfQT1fb47330c99e9056d9bdb379239?mode=embed" width="800" height="600" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"  frameborder="0"></iframe>
-                                    
-                                    
-                                    <p>
-                                        og þetta er samansettur armur:
-                                    </p>
-                                    
                                     <article class="box post">
-        <a href="#" class="image featured"><img src="Armur2.jpg" alt="" /></a>
-        <p>Mynd 10: Armur tvö</p>
+        <a href="#" class="image featured"><img src="MYND6LOKA.jpg" alt="" /></a>
+        <p>Mynd 6: Skálar og stykki.</p>
         </article>
-                                    <p>
-                                    og svo loksins allt sett saman:
-                                        
-                                    
-                                    </p>
-                                    
-                                  <article class="box post">
-        <a href="#" class="image featured"><img src="Sam1.jpg" alt="" /></a>
-        <p>Mynd 11: Armar og gírkassi</p>
-        </article>  
-                                 
-                                    
-                                    
+                                   
                                     
                                     <p>
-                                    
-                                    Svo var fundin kló á grabcad sem þurfti aðeins að breyta. Til þess að hún myndi þægilega ná að grípa í glasið var mælt þvermál hálsins (á glasinu) efst sem 11 mm og svo aðeins neðar þar sem það var 12 mm. Síðan var kló breytt þannig að þegar hún var fullokuð þá greip hún um þetta svæði fullkomlega, þ.e. myndaði 12 mm hring (þvermál) sem línulega fór í 11mm hring efst. Þessi kló var fyrir 9g servo motor og má sjá hana hér fyrir neðan. Svo var hannað millistykki fyrir klóna og má sjá þetta í eftirfarandi Fusion skrá:
-                                        
-                                    
-                                    </p>
-                                    <iframe src="https://gmail3729402.autodesk360.com/shares/public/SHd38bfQT1fb47330c9960016f0e4d667426?mode=embed" width="800" height="600" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"  frameborder="0"></iframe>
-                                    <p>
-                                    
-                                    
-                                    Og mynd af servo mótornum inni í klónni:
                                         
                                     </p>
-                                    <article class="box post">
-        <a href="#" class="image featured"><img src="9g.jpg" alt="" /></a>
-        <p>Mynd 12: Servo 9g</p>
-        </article>
-                                    
-                                    
-                                    <p>
-                                    
-                                    Á meðan kló var í prenti þá voru servo mótorarnir kóðaðir þannig að þeir virki með hinum tveimur. 
-                                    </p>
-                                    <p>
-                                    Kló og millistykki komu úr prenti um nóttina og leit það svona út:
-                                    </p>
-                                    
-                                    <article class="box post">
-        <a href="#" class="image featured"><img src="klo.jpg" alt="" /></a>
-        <p>Mynd 13: Kló</p>
-        </article>
-                                    
-                                    
-                                </section>
-                                
+                                    </section>
                                 
                                  
                                 <section>
                                 <header>
-										<h2>5. Mars, Þriðjudagur</h2>
+										<h2>16. Apríl, Þriðjudagur</h2>
 									</header>
                                     
                                     
                                     <p>
                                     
-                                    Nú var aðeins eitt eftir, að koma litanema og hitamæli fyrir og kóða allt ruglið. Það er ekki vitað hvað þeir heita en hér eru myndir af mælunum:
+                                    Í dag var farið í Byko og keift 100 mm M5 bolta ásamt M5 ró til að bolta servo festingar saman (Mynd 1).
+                                    
+                                    
                                         
                                     
                                     </p>
-                                    
-                                    <article class="box post">
-        <a href="#" class="image featured"><img src="malar1.jpg" alt="" /></a>
-        <p>Mynd 14: Litamælir</p>
-        </article>
-                       <article class="box post">
-        <a href="#" class="image featured"><img src="malar2.jpg" alt="" /></a>
-        <p>Mynd 15: Hitamælir</p>
-        </article>             
-                                    
-                                    
+                                    <p>Einnig var byrjað á að forrita mótoranna..  Byrjað var á því að tengja arduino uno við einn stepper motor sem snýr skoda disknum og síðan tvo servo-a sem stýra lokunum.  Servo mótorarnir geta verið smá leiðinlegir en ein leiðin sem hefur virkað til að losna við leiðindi hjá þeim er að skrifa í kóðan fyrstu stöðuna hjá þeim beint eftir að búið er að tilgreina hvaða pinna þeir eru í.  Næsta var að búa til breytu sem stýrir fjöldi skota sem róbotinn hellir uppá.  Síðan var gert fall sem gefur upp slembitölu milli 1 og fjöldi skota.  Næst var gert for lykkja sem fer frá 1 upp í fjöldi skota og ef númerið af skota sem er hellt er jafnt slembi tölunni þá kemur vodka.  Þá var kóði tilbúinn þar sem hægt er að stýra fjöldi skota sem er hellt upp á.</p>
                                     <p>
-                                    
-                                    Það var ekkert verið að flækja það varðandi hvernig átti að koma þeim fyrir og voru þeir báðir límdir við klóna með límbandi eins og má sjá hér:
+                                        Ekki var gert meira í dag
                                     </p>
-                                    
-                                    
-                                    
-                                    <article class="box post">
-        <a href="#" class="image featured"><img src="lim.jpg" alt="" /></a>
-        <p>Mynd 16: Mælar festir við</p>
-        </article> 
-                                    
-                                    <p>
-                                   Þá var hitastigsmælir fyrst kóðaður og var fundin einhver kóði á netinu sem virkaði nógu vel. Mælirinn var tengdur í aðra arduino tölvu en sú sem sér um hreyfingarnar svo það væri ekki allt of mikið í gangi í einum kóða. Einnig var „hreyfi“ arduino brettið nánast orðið fullpakkað. 
-Þá var fyrst kóðað fyrir hreyfingu armsins fyrir hitamælinn, þá þurfti hann að stinga mælinum ofan í glasið, halda honum þar, og færa arminn aftur upp í upphafsstöðu. Þetta tók vissulega sinn tíma en það tókst og ekki er talið þurfa að sýna myndband af þessu þar sem hæfni armsins til að framkvæma þetta verk var staðfest af dómara á sýningardegi, 12. mars. Þá var verki dagsins lokið.
-
-
-                                    
-                                    </p>
-                                    
-                                    
+                                   
                                     
                                     
                                 </section>
+                                    
+                                    
                                 
                           <section>
                                 <header>
-										<h2>6. Mars, Miðvikudagur</h2>
+										<h2>17. Apríl, Miðvikudagur</h2>
 									</header>
                               <p>
-                              Hér var litagreinirinn kvarðaður með því að beina honum að hvítum hlut og mæla RGB gildi þeirra, svo gera það sama með svartan og finna þá max og min gildin. Síðan var kóði keyrður sem mælir gildin á hverri sekúndu, geymir þau og tekur meðalgildið. Síðan ef meðaltal R-gildanna er undir 70 þá birtir hann rautt, annars hvítt. Þetta virkaði á endanum og þótt það er ekki til myndband af þessu þá var staðfest af dómara að hann greindi rétt, þegar sýning átti sér stað kl. 10 morguninn 12 mars. Ekki þurfti að kóða sér hreyfingu fyrir litagreini því þegar glas er tekið upp og sopi er gefinn þá er hann staðsettur þannig að hannn er alltaf að beina ofan í glasið.
-Þá var verki dagsins lokið.
+                             í dag var hannaður “haldari” fyrir helli kerfið. Aðal vandamálið var að hann þurfti að vera skipt í tvennt því prentarinn sem er til staðar er ekki nógu stór. Haldarinn þurfti einnig að geta tengst grunninum fyrir stepperinn og það þurfti að vera þægilegt að fjarlægja hann frá grunninum. Eftirfarandi hönnun kom þá fram:
 
                               </p>
                               
+                              
+                              <iframe src="https://gmail3729402.autodesk360.com/shares/public/SHd38bfQT1fb47330c9930968352feddbc6c?mode=embed" width="800" height="600" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"  frameborder="0"></iframe>
+                              
+                              
+                              <iframe src="https://gmail3729402.autodesk360.com/shares/public/SHd38bfQT1fb47330c996141c2188d9d663c?mode=embed" width="800" height="600" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"  frameborder="0"></iframe>
+                              <iframe src="https://gmail3729402.autodesk360.com/shares/public/SHd38bfQT1fb47330c99cad41ed36fbd816f?mode=embed" width="800" height="600" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"  frameborder="0"></iframe>
+                              <p>Eins og sést hér fyrir ofan þá er honum skipt í tvennt og haldið saman með M4 boltum. Haldarinn heldur svo helli kerfinu með sömu M5 boltum og heldur helli kerfinu saman. Einnig er neðri parturinn með M3 bolta holum þannig að þar er hægt að festa arduino tölvuna við hann. Einnig í efri partinum er kassalaga hola fyrir 9V duracell batterí þsem aflgjafa fyrir tölvuna. Þar sem báðir partar eru frekar stór prent þá var byrjað á stærri partinum, þá neðri. Einnig þar sem allir partar eru tilbúnir þá var hent í assembly á öllu tækinu og er það eftirfarandi:</p>
+                              
+                              
+                              <iframe src="https://gmail3729402.autodesk360.com/shares/public/SHd38bfQT1fb47330c992e9fd52c5cfff506?mode=embed" width="800" height="600" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"  frameborder="0"></iframe>
                                 </section>
 								
 								<section>
                                 <header>
-										<h2>11.mars, mánudagur – 12.mars, þriðjudagur</h2>
+										<h2>18.Apríl, Fimmtudagur</h2>
                                     </header>
                                     
                                     <p>
-                                    Frá 11:00 að morgni á mánudegi til um 6:30 morguninn eftir á þriðjudegi var armurinn kóðaður til þess að lyfta upp glasinu og gefa sopa þar sem það var það eina sem var eftir. Einnig átti eftir að setja upp vefsíðu og streymi en það var gert í gegnum Twitch og sá dómari á sýningu að það virkaði. Eins og dómari lýsti yfir við kynningu verkefnis þá heppnaðist þetta þrátt fyrir að kló hafi ekki náð að loka að glasi að fullu. Það var látið hann vita við sýninguna að klóin hagaði sér rétt fyrr um daginn og værum við með myndband til að sanna það. Vandamálið var að við sýningu þá lokaðist hún of fljótt (hún á að lokast hægt til að koma í veg fyrir töp) og lokaðist því ekki að fullu. Eftirfarandi er myndband af róbot taka upp glasið eins og það átti að gera fyrir sýningu:
+                                   Í dag var hent seinni haldara partinum í prent og sá fyrri tilbúin en ekki var meira gert.
                                     </p>
                                     
-                                    
-                                    <ul class="action fit small"></ul>
-                                        <li><a href="https://www.youtube.com/watch?v=O9h-MET8Z0M">Myndband - Kló að virka</a></li>
-                                    
-                                    <p>
-                                    
-                                    Síðan var armur sýndur og að sýningu lokinni gaf dómari út að hann hafi staðist allar væntingar.
-                                    </p>
+                                 
                                 </section>
                                     
                                 <section>
                                 <header>
-										<h2>18.mars, mánudagur</h2>
+										<h2>19.Apríl, Föstudagur</h2>
                                     </header>
                                 <p>
-                                    Þessi dagbók skrifuð og skilað.
+                                    Í dag var allt tækið set saman þar sem allir partar voru tilbúnir og lær þá rúllettan svona út:
+.
                                     
                                     </p>
+                                      <article class="box post">
+        <a href="#" class="image featured"><img src="MYND7LOKA.jpg" alt="" /></a>
+        <p>Mynd 7: Vodka Rúlletta.</p>
+        </article>
+                                    
+                                    <p>Hins vegar kom í ljós leiðinlegt vesen, að það lekur vökvi þar sem skálarnar eru skrúfaðar í lokanna. Þetta  var lagað með nóg að mataröruggu vatnslímbandi, þ.e. það var látið í kringum skrúfgangin og skálarnar skrúfaðar aftur í sem gerði trykkið. Ekki var gert meira í dag. </p>
+                                    
+                                    
+                     
                                 </section>
                                 
-                                
-                                
+                                <section>
+                                <header>
+										<h2>20.Apríl, Laugardagur</h2>
+                                    </header>
+                                <p>Í dag var ákveðið að það væri flottara að stjórna tækinu með fjarstýringu frekar en tölvu og var farið í að græja það. Það virkar þá þannig að infrared fjarstýring eins og slík á Mynd 8 er notuð ásamt infrared skynjara (Mynd 8). </p>
+                                    <article class="box post">
+        <a href="#" class="image featured"><img src="MYND7LOKA.jpg" alt="" /></a>
+        <p>Mynd 8: Fjarstýring og skynjari.</p>
+        </article>
+                                    
+                                    <p>
+                                    Byrjað var á að tengja infrared mótakaran við sér arduino tölvu.  Fundið var kóða á netinu sem á að afkóða infrared ljósið frá fjarstýringu frá binary tölu í sextándukerfis tölu (hexadecimal).  Aðeins var afkóðað þá takka sem planað var að nota eða sem var möguleiki að nota.  Síðan var ákveðið að hella alltaf uppá sex glös en talan sem ýtt er á á fjarstýringunni stýrir fjöldi skota með vodka í.  Forritari ákvað að halda áfram að vinna með lista og í raun það eina sem fjarstýringin gerir að að breyta fjöldi ása í lista af núllum.  Annars er for lykkja ennþá sem fer yfir listan.  Vandræði sem lent var í var að vinna með case.  Ekki hafði forritari mikla reynslu á því en það tókst að lokum með smá hjálp frá chatgpt.  
+
+                                    </p>
+                                    <p>
+                                    Eftir þetta þá var farið í að finna skotglös. Vandamálið er að þrátt fyrir það magn af fyllibyttum sem búa á þessu skeri þá var ómögulegt að finna þægileg glös og var því keypt aðeins stærri glös en borðið leyfði sem krafðist þá breytingum á borðinu. Það var ekki flókið, holunum var fækkað frá 8 í 6 og þvermálið á þeim hækkað frá 38 mm í 47 mm en annars er teikning eins.
+</p>
+                                    <p>
+                                    Þá var ekki gert meira í dag
+                                    </p>
+                                    </section>
+                                    <section>
+                                <header>
+										<h2>21. Apríl, Sunnudagur</h2>
+                                    </header>
+                                    Í dag var kóðinn fullkomnaður þannig að báðir servo mótorar hella eins í glösinn og þá var verkefni lokið.
+                                    </section>
                                 <section>
                                 <header>
 										<h2>Efnisyfirlit</h2>
                                     </header>
                                 <p>
-                                    Eftirfarandi er efnisyfirlit yfir allt í arminum
+                                    Eftirfarandi er efnisyfirlit yfir allt í tækinu:
                                     
                                     
                                     
                                     </p>
                                     
                                      <article class="box post">
-        <a href="#" class="image featured"><img src="efnis.png" alt="" /></a>
+        <a href="#" class="image featured"><img src="EFNISLOKA.png" alt="" /></a>
         
         </article> 
                                 
-                                 <section>
-                                <header>
-										<h2>Lokaorð</h2>
-                                    </header>    
-                                    
-                                    <p>
-                                     Ef horft er yfir verkefnið í heild þá var það mjög krefjandi og mun erfiðara en verkefni sem voru á fyrri árum. Það er áætlað að hópurinn hafi skilað inn allavega 150 (ef ekki meira) vinnutímum í verkefnið og var aðal hindruninn að það er bara ekkert til í VR3, ekkert af viti allavega. Vitað er um hópa sem þurftu að rífa hluti í sundur bara til að ná í skrúfur svo eitthvað sé nefnt. Hins vegar var þetta klárað og lærdómurinn frá þessu verkefni er mikill. Það liggur við að á þessum tveimur vikum þurfti maður að læra grunninn í rafmagnsverkfræði, ásamt að sérhæfast í gírasmíði og vægisreikningum. Ef það gæfist meiri tími fyrir verkefnið og ef nauðsynlegir hlutir væru til staðar, þá er hiklaust mælt með öðru svipuðu verkefni fyrir næsta ár en einhversstaðar þarf að minnka álag og vinnutíma. Hópurinn skemmti sér þó við gerð armsins og þar sem enginn missti vitið þá er þetta allt í allt talinn sigur. 
-                                     
-                                     
-                                     </p>
-                                </section>
+                              
                                 
-							</article>
+					
 
 					</div>
 				</section>
